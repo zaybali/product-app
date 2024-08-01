@@ -34,7 +34,7 @@ export default function MyInfo() {
         </div>
         <div className="input-container">
             <label className="label">
-                Father's Name:
+                Father&apos;s Name:
                 <input
                 type="text"
                 value={fatherName}
