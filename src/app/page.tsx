@@ -23,9 +23,9 @@ const products: ProductItemType[] = [
   },
   {
     id: 3,
-    name: 'Eid Special Nara J.',
-    price: 25,
-    category: "Cloths"
+    name: 'Eid Special Kurta',
+    price: 30,
+    category: "Clothes"
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const products: ProductItemType[] = [
 
 export default function Home() {
   const [categList, setCategList] = useState([
-    "All", "Phones", "Gadgets", "Cloths", "Cars", "Computers"
+    "All", "Phones", "Gadgets", "Clothes", "Cars", "Computers"
   ]);
   const [filteredProducts, setFilteredProducts] = useState(products);
 
