@@ -23,7 +23,7 @@ export default function Categories({ categories, setFilteredProducts, products }
     }
 
     return (
-        <>
+        <div className="category-buttons">
             {
                 categories.map((category, i) => (
                     <button 
@@ -35,6 +35,6 @@ export default function Categories({ categories, setFilteredProducts, products }
                 ))
             }
 
-        </>
+        </div>
     )
 }

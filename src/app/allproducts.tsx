@@ -9,7 +9,7 @@ export default function AllProducts({ productList }: ProductListType) {
 
     return (
 
-        <table style={{ border: '1px solid black' }}>
+        <table className="product-table">
             <thead>
                 <tr>
                     <th style={{ border: '1px solid black', padding: "10px" }}>

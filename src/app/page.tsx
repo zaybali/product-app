@@ -5,6 +5,8 @@ import AllProducts from "./allproducts";
 import Categories from "./categories";
 import MyInfo from "./myinfo";
 import { ProductItemType } from "./product-type";
+import './styles.css';
+
 
 const products: ProductItemType[] = [
   {
@@ -47,7 +49,7 @@ export default function Home() {
 
 
   return (
-    <>
+    <div className="container">
       <MyInfo />
       <Categories
         categories={categList}
@@ -57,6 +59,6 @@ export default function Home() {
       <AllProducts
         productList={filteredProducts}
       />
-    </>
+    </div>
   );
 }

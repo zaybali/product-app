@@ -2,17 +2,17 @@
 
 export default function MyInfo() {
     return (
-        <table style={{ border: '1px solid black' }}>
+        <table className="my-info-table">
             <thead>
                 <tr>
                     <th style={{ border: '1px solid black', padding: "10px" }}>
-                        Haider Ali
+                        Zaib Ali
                     </th>
                     <th style={{ border: '1px solid black', padding: "10px" }}>
-                        Muhammad Shah Alam
+                        Muhammad Ismail
                     </th>
                     <th style={{ border: '1px solid black', padding: "10px" }}>
-                        2643
+                        175561
                     </th>
                 </tr>
             </thead>

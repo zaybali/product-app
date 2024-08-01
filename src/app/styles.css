@@ -1,0 +1,79 @@
+/* styles.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for the main content */
+.container {
+  width: 70%;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Styles for the category buttons */
+.category-buttons {
+  margin-bottom: 20px;
+}
+
+.category-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the product table */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.product-table th, .product-table td {
+  border: 1px solid #dee2e6;
+  padding: 12px;
+  text-align: left;
+}
+
+.product-table th {
+  background-color: #f1f1f1;
+}
+
+.product-table td {
+  background-color: #f9f9f9;
+}
+
+/* Styles for the MyInfo table */
+.my-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.my-info-table th {
+  border: 1px solid #dee2e6;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+}
