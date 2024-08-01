@@ -1,14 +1,25 @@
 "use client"
 
+import { ProductItemType } from "./product-type"
+
+type SetFilteredProductsType =(products: ProductItemType[]) => void;
+
 type CategoryType = {
     categories: string[]
+    setFilteredProducts: SetFilteredProductsType
+    products: ProductItemType[]
 }
 
-export default function Categories({ categories }: CategoryType) {
-
-
+export default function Categories({ categories, setFilteredProducts, products }: CategoryType) {
+    
     const selectCategory = (categoryName: string) => {
-        console.log(categoryName);
+       if(categoryName === "All") {
+        setFilteredProducts(products);
+       }
+       else {
+        const filtered = products.filter(product => product.category === categoryName);
+            setFilteredProducts(filtered);
+       }
     }
 
     return (

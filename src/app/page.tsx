@@ -51,6 +51,8 @@ export default function Home() {
       <MyInfo />
       <Categories
         categories={categList}
+        setFilteredProducts={setFilteredProducts}
+        products={products}
       />
       <AllProducts
         productList={filteredProducts}
