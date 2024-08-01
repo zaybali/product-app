@@ -77,3 +77,71 @@ body {
   color: white;
   text-align: center;
 }
+
+.inputs-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between input fields */
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* General input field styling */
+.input-field {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-field:focus {
+  border-color: #0070f3; /* Change the border color when focused */
+  box-shadow: 0 0 3px rgba(0, 112, 255, 0.5); /* Add a subtle shadow effect */
+  outline: none;
+}
+
+/* Label styling */
+.label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Table styling */
+.my-info-table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Table header cell styling */
+.my-info-table th {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    margin-bottom: 15px;
+  }
+
+  .input-field {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+}
