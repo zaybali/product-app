@@ -43,7 +43,7 @@ const products: ProductItemType[] = [
 
 export default function Home() {
   const [categList, setCategList] = useState([
-    "All", "Phones", "Gadgets", "Clothes", "Cars", "Computers"
+    "Sort Price","All", "Phones", "Gadgets", "Clothes", "Cars", "Computers"
   ]);
   const [filteredProducts, setFilteredProducts] = useState(products);
 
