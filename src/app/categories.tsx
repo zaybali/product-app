@@ -17,7 +17,7 @@ export default function Categories({ categories, setFilteredProducts, products }
         setFilteredProducts(products);
        }
        else {
-        const filtered = products.filter(product => product.category === categoryName);
+        const filtered = products.filter(({ category }) => category === categoryName);
             setFilteredProducts(filtered);
        }
     }
